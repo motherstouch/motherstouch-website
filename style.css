@@ -1504,3 +1504,119 @@ nav {
   background: #1e88e5;
   border-radius: 999px;
 }
+/* =========================
+   STEP 14 FINAL PROFESSIONAL POLISH
+========================= */
+
+/* CONTACT SECTION PROFESSIONAL FEEL */
+.contact-left h2 {
+  max-width: 700px;
+}
+
+.contact-form {
+  position: relative;
+}
+
+.contact-form::before {
+  content: "Private Consultation Request";
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #1565c0;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.contact-form button {
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+/* FORM FIELD PREMIUM */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder,
+.contact-form select {
+  color: #6d7f92;
+}
+
+/* CONTACT BOX IMPROVEMENT */
+.contact-info-box {
+  transition: all 0.3s ease;
+}
+
+.contact-info-box:hover h4 {
+  color: #1e88e5;
+}
+
+/* FOOTER FINAL LOOK */
+.footer-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-section::before {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.08), transparent 70%);
+  top: -100px;
+  right: -80px;
+  pointer-events: none;
+}
+
+.footer-section::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(144,202,249,0.10), transparent 70%);
+  bottom: -80px;
+  left: -80px;
+  pointer-events: none;
+}
+
+.footer-top,
+.footer-bottom {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-links {
+  min-width: 180px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-links a {
+  font-weight: 500;
+  padding: 3px 0;
+}
+
+/* WHATSAPP BUTTON MORE PREMIUM */
+.whatsapp-float {
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+/* MOBILE FINAL TOUCH */
+@media (max-width: 768px) {
+  .footer-links {
+    align-items: flex-start;
+  }
+
+  .footer-brand h3 {
+    font-size: 1.7rem;
+  }
+
+  .footer-small-text {
+    font-size: 0.95rem;
+  }
+}
