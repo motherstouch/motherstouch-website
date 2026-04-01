@@ -9,8 +9,8 @@ animatedSections.forEach(section => {
   section.classList.add("fade-up");
 });
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
     }
@@ -24,18 +24,20 @@ animatedSections.forEach(section => {
 });
 
 // Mobile menu toggle
-const menuToggle = document.getElementById("menuToggle");
-const mobileNav = document.getElementById("mobileNav");
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menuToggle");
+  const mobileNav = document.getElementById("mobileNav");
+  const navLinks = document.querySelectorAll(".nav-links a");
 
-menuToggle.addEventListener("click", () => {
-  mobileNav.classList.toggle("active");
-});
+  if (menuToggle && mobileNav) {
+    menuToggle.addEventListener("click", function () {
+      mobileNav.classList.toggle("active");
+    });
+  }
 
-// Auto close menu after click
-const navLinks = document.querySelectorAll(".nav-links a");
-
-navLinks.forEach(link => {
-  link.addEventListener("click", () => {
-    mobileNav.classList.remove("active");
+  navLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      mobileNav.classList.remove("active");
+    });
   });
 });
