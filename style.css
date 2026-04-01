@@ -913,3 +913,44 @@ h1, h2, h3 {
 .footer-brand p {
   line-height: 1.8;
 }
+/* QUICK CONTACT STRIP */
+.quick-contact-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 26px 0 30px;
+}
+
+.quick-contact-strip a {
+  text-decoration: none;
+  background: white;
+  color: #0f4c81;
+  border: 1px solid #dceafb;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  box-shadow: 0 10px 24px rgba(30, 136, 229, 0.06);
+  transition: 0.3s ease;
+}
+
+.quick-contact-strip a:hover {
+  transform: translateY(-3px);
+  background: #eaf4ff;
+  box-shadow: 0 14px 28px rgba(30, 136, 229, 0.10);
+}
+
+/* MAP BOX */
+.map-box {
+  margin-top: 24px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(15, 76, 129, 0.08);
+  border: 1px solid #e3eef9;
+}
+
+/* CONTACT SECTION MORE REAL */
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
