@@ -802,6 +802,7 @@ h1, h2, h3 {
     gap: 16px;
   }
 }
+
 /* SCROLL ANIMATION */
 .fade-up {
   opacity: 0;
