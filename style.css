@@ -967,12 +967,27 @@ h1, h2, h3 {
 /* IMPROVED MOBILE NAVBAR */
 @media (max-width: 992px) {
   .navbar {
-    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 18px 8%;
+    position: relative;
+  }
+
+  .logo {
+    font-size: 1.9rem;
+    flex: 1;
   }
 
   .menu-toggle {
     display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #0f4c81;
+    cursor: pointer;
+    margin-left: auto;
   }
 
   nav {
@@ -982,7 +997,7 @@ h1, h2, h3 {
 
   nav.active {
     display: block;
-    margin-top: 15px;
+    margin-top: 18px;
   }
 
   .nav-links {
@@ -1000,6 +1015,7 @@ h1, h2, h3 {
     display: none;
   }
 }
+
 
 /* EXTRA MOBILE CLEANUP */
 @media (max-width: 576px) {
