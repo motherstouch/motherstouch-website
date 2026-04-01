@@ -954,3 +954,89 @@ h1, h2, h3 {
   flex-direction: column;
   justify-content: center;
 }
+/* HAMBURGER MENU */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #0f4c81;
+  cursor: pointer;
+}
+
+/* IMPROVED MOBILE NAVBAR */
+@media (max-width: 992px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    display: none;
+  }
+
+  nav.active {
+    display: block;
+    margin-top: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    background: white;
+    padding: 24px;
+    border-radius: 22px;
+    box-shadow: 0 18px 40px rgba(15, 76, 129, 0.08);
+    margin-top: 10px;
+  }
+
+  .book-btn {
+    display: none;
+  }
+}
+
+/* EXTRA MOBILE CLEANUP */
+@media (max-width: 576px) {
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .hero-text h1,
+  .section-header h2,
+  .about-content h2,
+  .contact-left h2 {
+    line-height: 1.2;
+  }
+
+  .hero-description,
+  .section-subtext,
+  .about-content p,
+  .contact-subtext {
+    font-size: 0.96rem;
+  }
+
+  .quick-contact-strip {
+    flex-direction: column;
+  }
+
+  .quick-contact-strip a {
+    text-align: center;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    font-size: 0.95rem;
+  }
+
+  .top-strip {
+    font-size: 0.82rem;
+    padding: 10px 14px;
+  }
+}
