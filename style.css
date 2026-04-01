@@ -888,3 +888,28 @@ h1, h2, h3 {
 .top-strip p {
   margin: 0;
 }
+/* REAL CLINIC DETAIL POLISH */
+.about-content p {
+  line-height: 1.9;
+}
+
+.contact-info-box h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.contact-info-box p {
+  line-height: 1.8;
+}
+
+.footer-small-text {
+  color: #dbeafb;
+  margin-top: 14px;
+  max-width: 420px;
+  line-height: 1.8;
+  font-size: 0.96rem;
+}
+
+.footer-brand p {
+  line-height: 1.8;
+}
