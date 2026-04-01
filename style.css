@@ -1112,3 +1112,203 @@ nav {
     text-align: center;
   }
 }
+/* =========================
+   STEP 12 PREMIUM SECTION UPGRADE
+========================= */
+
+/* SECTION SPACING POLISH */
+.problems-section,
+.services-section,
+.packages-section,
+.about-section,
+.why-section,
+.testimonials-section,
+.faq-section,
+.contact-section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* PREMIUM SOFT BACKGROUNDS */
+.problems-section::before,
+.services-section::before,
+.packages-section::before,
+.about-section::before,
+.why-section::before,
+.testimonials-section::before,
+.faq-section::before,
+.contact-section::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(30, 136, 229, 0.08), transparent 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.problems-section::before { top: -80px; right: -80px; }
+.services-section::before { bottom: -100px; left: -100px; }
+.packages-section::before { top: -80px; left: -80px; }
+.about-section::before { bottom: -80px; right: -80px; }
+.why-section::before { top: -100px; right: -100px; }
+.testimonials-section::before { bottom: -80px; left: -80px; }
+.faq-section::before { top: -100px; left: -100px; }
+.contact-section::before { bottom: -100px; right: -100px; }
+
+/* Keep content above glow */
+.section-header,
+.problems-grid,
+.services-grid,
+.packages-grid,
+.about-container,
+.why-grid,
+.testimonials-grid,
+.faq-container,
+.contact-container {
+  position: relative;
+  z-index: 2;
+}
+
+/* PREMIUM CARD FEEL */
+.problem-card,
+.service-card,
+.package-card,
+.why-card,
+.testimonial-card,
+.faq-item,
+.contact-info-box,
+.contact-form,
+.highlight-box,
+.stat-box {
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(219, 234, 251, 0.95);
+}
+
+/* STRONGER HOVER */
+.problem-card:hover,
+.service-card:hover,
+.package-card:hover,
+.why-card:hover,
+.testimonial-card:hover,
+.faq-item:hover,
+.contact-info-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 55px rgba(30, 136, 229, 0.10);
+  border-color: #c5e1fb;
+}
+
+/* ABOUT IMAGE PREMIUM */
+.about-image img {
+  border: 6px solid rgba(255, 255, 255, 0.82);
+  position: relative;
+}
+
+.about-image img:hover {
+  transform: scale(1.015);
+  transition: 0.4s ease;
+}
+
+/* PREMIUM TEXT SPACING */
+.section-header h2,
+.about-content h2,
+.contact-left h2 {
+  letter-spacing: -0.5px;
+}
+
+.section-subtext,
+.about-content p,
+.contact-subtext,
+.problem-card p,
+.service-card p,
+.why-card p,
+.faq-item p,
+.testimonial-text {
+  line-height: 1.85;
+}
+
+/* SERVICE TAG LOOK */
+.service-card span,
+.package-card span {
+  box-shadow: 0 10px 24px rgba(30, 136, 229, 0.08);
+}
+
+/* TESTIMONIAL TEXT */
+.testimonial-text {
+  font-size: 1.02rem;
+  color: #49627d;
+}
+
+/* FAQ PREMIUM */
+.faq-item h3 {
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+/* CONTACT FORM PREMIUM */
+.contact-form {
+  border-radius: 32px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  background: rgba(248, 251, 255, 0.95);
+  transition: 0.3s ease;
+}
+
+.contact-form input:hover,
+.contact-form select:hover,
+.contact-form textarea:hover {
+  border-color: #b9d9f8;
+}
+
+/* BUTTONS EXTRA LUXURY */
+.primary-btn,
+.secondary-btn,
+.book-btn,
+.contact-form button,
+.quick-contact-strip a,
+.whatsapp-float {
+  box-shadow: 0 12px 28px rgba(30, 136, 229, 0.10);
+}
+
+/* SECTION TITLE LINE STRONGER */
+.section-header h2::after {
+  width: 84px;
+  height: 4px;
+}
+
+/* FOOTER MORE PREMIUM */
+.footer-section {
+  background: linear-gradient(135deg, #0f2f57, #0d3d6d, #12508f);
+}
+
+.footer-brand h3 {
+  letter-spacing: 0.3px;
+}
+
+/* MOBILE POLISH */
+@media (max-width: 768px) {
+  .problem-card,
+  .service-card,
+  .package-card,
+  .why-card,
+  .testimonial-card,
+  .faq-item,
+  .contact-info-box,
+  .contact-form {
+    border-radius: 22px;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .section-subtext {
+    font-size: 0.98rem;
+  }
+}
