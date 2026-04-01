@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 /* RESET */
 * {
   margin: 0;
@@ -798,4 +801,15 @@ h1, h2, h3 {
   .footer-links {
     gap: 16px;
   }
+}
+/* SCROLL ANIMATION */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
 }
