@@ -1,67 +1,75 @@
-// ================================
-// MOBILE HAMBURGER MENU
-// ================================
-const menuToggle = document.getElementById("menu-toggle");
-const mobileNav = document.getElementById("mobile-nav");
+// ==========================
+// MOBILE MENU TOGGLE
+// ==========================
+const menuToggle = document.getElementById("menuToggle");
+const mobileNav = document.getElementById("mobileNav");
 
 if (menuToggle && mobileNav) {
   menuToggle.addEventListener("click", () => {
     mobileNav.classList.toggle("active");
+
+    if (mobileNav.classList.contains("active")) {
+      menuToggle.innerHTML = "✕";
+    } else {
+      menuToggle.innerHTML = "☰";
+    }
   });
 }
 
-// Close menu after clicking any nav link
+// ==========================
+// CLOSE MENU WHEN LINK CLICKED
+// ==========================
 const navLinks = document.querySelectorAll(".nav-links a");
 
-navLinks.forEach((link) => {
+navLinks.forEach(link => {
   link.addEventListener("click", () => {
-    if (mobileNav) {
+    if (mobileNav.classList.contains("active")) {
       mobileNav.classList.remove("active");
+      menuToggle.innerHTML = "☰";
     }
   });
 });
 
-// ================================
-// FADE-UP SCROLL ANIMATION
-// ================================
+// ==========================
+// SCROLL REVEAL ANIMATION
+// ==========================
 const fadeElements = document.querySelectorAll(".fade-up");
 
-if (fadeElements.length > 0) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-        }
-      });
-    },
-    {
-      threshold: 0.15,
+const revealOnScroll = () => {
+  fadeElements.forEach((element) => {
+    const elementTop = element.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (elementTop < windowHeight - 80) {
+      element.classList.add("show");
     }
-  );
+  });
+};
 
-  fadeElements.forEach((el) => observer.observe(el));
-}
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
 
-// ================================
-// OPTIONAL: CLOSE MENU IF USER CLICKS OUTSIDE
-// ================================
-document.addEventListener("click", function (event) {
-  if (
-    mobileNav &&
-    menuToggle &&
-    !mobileNav.contains(event.target) &&
-    !menuToggle.contains(event.target)
-  ) {
-    mobileNav.classList.remove("active");
-  }
-});
+// ==========================
+// OPTIONAL SMOOTH ACTIVE NAV FEEL
+// ==========================
+const sections = document.querySelectorAll("section[id]");
 
-// ================================
-// OPTIONAL: CLOSE MENU WHEN SCREEN RESIZES TO DESKTOP
-// ================================
-window.addEventListener("resize", () => {
-  if (window.innerWidth > 992 && mobileNav) {
-    mobileNav.classList.remove("active");
-  }
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 120;
+    const sectionHeight = section.offsetHeight;
+
+    if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active-link");
+    if (link.getAttribute("href") === `#${current}`) {
+      link.classList.add("active-link");
+    }
+  });
 });
