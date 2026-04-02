@@ -158,6 +158,31 @@ const translations = {
     service6Title: "Weaning Consultation",
     service6Desc: "Step-by-step help for gentle and healthy baby-led weaning.",
 
+    // PACKAGES
+    packagesTag: "Care Plans",
+    packagesTitle: "Support Packages Designed for Mothers",
+    packagesDesc: "Thoughtfully created consultation plans to give mothers continued breastfeeding guidance and confidence.",
+
+    package1Title: "New Mom Support Plan",
+    package1Desc: "Ideal for early breastfeeding struggles and first-time mothers.",
+    package1Item1: "2 Video Consultations",
+    package1Item2: "15 Days WhatsApp Support",
+    package1Item3: "1 Follow-up Guidance",
+
+    package2Badge: "Most Popular",
+    package2Title: "Complete Breastfeeding Care Plan",
+    package2Desc: "Best for mothers who need complete support and follow-up care.",
+    package2Item1: "2 Consultations",
+    package2Item2: "30 Days WhatsApp Support",
+    package2Item3: "Personalized Feeding Guidance",
+    package2Item4: "Priority Follow-up",
+
+    package3Title: "Prenatal + Postnatal Combo",
+    package3Desc: "Perfect for mothers who want guidance before and after delivery.",
+    package3Item1: "1 Prenatal Session",
+    package3Item2: "1 Post-Delivery Session",
+    package3Item3: "1 Follow-up Consultation",
+
     trustTag: "Transformation",
     trustTitle: "From Feeding Stress to Feeding Confidence",
     trustDesc: "How mothers often feel before and after proper lactation guidance.",
@@ -308,6 +333,31 @@ const translations = {
     service6Title: "વીનિંગ કન્સલ્ટેશન",
     service6Desc: "બાળક માટે હેલ્ધી વીનિંગ માટે સ્ટેપ બાય સ્ટેપ માર્ગદર્શન.",
 
+    // PACKAGES
+    packagesTag: "કેર પ્લાન્સ",
+    packagesTitle: "માતાઓ માટે ખાસ બનાવેલા સપોર્ટ પેકેજ",
+    packagesDesc: "માતાઓને સતત બ્રેસ્ટફીડિંગ માર્ગદર્શન અને આત્મવિશ્વાસ આપવા માટે વિચારપૂર્વક બનાવેલા પ્લાન્સ.",
+
+    package1Title: "ન્યૂ મોમ સપોર્ટ પ્લાન",
+    package1Desc: "શરૂઆતની બ્રેસ્ટફીડિંગ સમસ્યાઓ અને પ્રથમવાર માતાઓ માટે શ્રેષ્ઠ.",
+    package1Item1: "2 વિડિયો કન્સલ્ટેશન",
+    package1Item2: "15 દિવસ WhatsApp સપોર્ટ",
+    package1Item3: "1 ફોલોઅપ માર્ગદર્શન",
+
+    package2Badge: "સૌથી લોકપ્રિય",
+    package2Title: "કમ્પ્લીટ બ્રેસ્ટફીડિંગ કેર પ્લાન",
+    package2Desc: "જેઓને સંપૂર્ણ સપોર્ટ અને ફોલોઅપ કાળજી જોઈએ છે એવી માતાઓ માટે શ્રેષ્ઠ.",
+    package2Item1: "2 કન્સલ્ટેશન",
+    package2Item2: "30 દિવસ WhatsApp સપોર્ટ",
+    package2Item3: "વ્યક્તિગત ફીડિંગ માર્ગદર્શન",
+    package2Item4: "પ્રાયોરિટી ફોલોઅપ",
+
+    package3Title: "પ્રિનેટલ + પોસ્ટનેટલ કોમ્બો",
+    package3Desc: "ડિલિવરી પહેલાં અને પછી બંને સમયે માર્ગદર્શન ઇચ્છતી માતાઓ માટે પરફેક્ટ.",
+    package3Item1: "1 પ્રિનેટલ સેશન",
+    package3Item2: "1 પોસ્ટ-ડિલિવરી સેશન",
+    package3Item3: "1 ફોલોઅપ કન્સલ્ટેશન",
+
     trustTag: "પરિવર્તન",
     trustTitle: "ફીડિંગ સ્ટ્રેસથી ફીડિંગ કૉન્ફિડન્સ સુધી",
     trustDesc: "યોગ્ય માર્ગદર્શન પહેલાં અને પછી માતાઓમાં થતો ફેરફાર.",
@@ -447,3 +497,4 @@ document.addEventListener("DOMContentLoaded", () => {
   const savedLang = localStorage.getItem("preferredLanguage") || "en";
   setLanguage(savedLang);
 });
+  
