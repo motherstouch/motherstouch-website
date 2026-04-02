@@ -33,13 +33,16 @@
     <div class="logo" id="siteLogo">Mother’s Touch</div>
 
     <div class="top-actions">
-     <div class="language-switch">
-  <button class="lang-btn active" onclick="setLanguage('en')">English</button>
-  <button class="lang-btn" onclick="setLanguage('gu')">ગુજરાતી</button>
+    <div class="language-switch" aria-label="Language switch">
+  <button id="langToggle" class="lang-toggle" type="button" aria-label="Toggle language" aria-pressed="false">
+    <span class="lang-pill"></span>
+    <span class="lang-label lang-en">EN</span>
+    <span class="lang-label lang-gu">ગુ</span>
+  </button>
 </div>
-     <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">☰</button>
-    </div>
 
+     <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">☰</button>
+    
     <nav id="mobileNav" class="nav-menu">
       <ul class="nav-links">
         <li><a href="#home" id="navHome">Home</a></li>
