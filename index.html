@@ -3,8 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Mother’s Touch | Lactation & Breastfeeding Support Clinic</title>
-  <meta name="description" content="Mother’s Touch offers compassionate lactation and breastfeeding support for mothers. Get expert guidance for latch issues, low milk supply, nipple pain, pumping, and newborn feeding support." />
+  <meta name="description" content="Mother’s Touch offers compassionate lactation and breastfeeding support for latch issues, low milk supply, nipple pain, pumping, weaning, and newborn feeding concerns." />
+  <meta name="keywords" content="lactation consultant Rajkot, breastfeeding support, lactation clinic, low milk supply, latch issues, nipple pain, pumping support, breastfeeding guidance" />
+  <meta name="author" content="Mother’s Touch" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mother’s Touch | Lactation & Breastfeeding Support Clinic" />
+  <meta property="og:description" content="Compassionate breastfeeding guidance for mothers. Online & In-Clinic consultation support." />
+  <meta property="og:type" content="website" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,18 +25,15 @@
 
   <!-- TOP STRIP -->
   <div class="top-strip">
-    <p data-en="Compassionate Breastfeeding Support • Online & In-Clinic Consultation • Mother’s Touch"
-       data-gu="સ્નેહભર્યું સ્તનપાન માર્ગદર્શન • ઑનલાઇન અને ક્લિનિક કન્સલ્ટેશન • મધર્સ ટચ">
-      Compassionate Breastfeeding Support • Online & In-Clinic Consultation • Mother’s Touch
-    </p>
+    <p id="topStripText">Compassionate Breastfeeding Support • Online & In-Clinic Consultation • Mother’s Touch</p>
   </div>
 
   <!-- NAVBAR -->
   <header class="navbar">
-    <div class="logo">Mother’s Touch</div>
+    <div class="logo" id="siteLogo">Mother’s Touch</div>
 
-    <div class="nav-right-controls">
-      <div class="language-switch">
+    <div class="top-actions">
+      <div class="lang-switch">
         <button id="langEn" class="lang-btn active">EN</button>
         <button id="langGu" class="lang-btn">ગુ</button>
       </div>
@@ -38,524 +43,433 @@
 
     <nav id="mobileNav" class="nav-menu">
       <ul class="nav-links">
-        <li><a href="#home" data-en="Home" data-gu="હોમ">Home</a></li>
-        <li><a href="#about" data-en="About" data-gu="અમારા વિશે">About</a></li>
-        <li><a href="#services" data-en="Services" data-gu="સેવાઓ">Services</a></li>
-        <li><a href="#reviews" data-en="Reviews" data-gu="અભિપ્રાય">Reviews</a></li>
-        <li><a href="#contact" data-en="Contact" data-gu="સંપર્ક">Contact</a></li>
+        <li><a href="#home" id="navHome">Home</a></li>
+        <li><a href="#about" id="navAbout">About</a></li>
+        <li><a href="#services" id="navServices">Services</a></li>
+        <li><a href="#reviews" id="navReviews">Reviews</a></li>
+        <li><a href="#faq" id="navFaq">FAQ</a></li>
+        <li><a href="#contact" id="navContact">Contact</a></li>
       </ul>
     </nav>
 
-    <a href="#contact" class="book-btn desktop-book-btn" data-en="Book Now" data-gu="બુક કરો">Book Now</a>
+    <a href="#contact" class="book-btn desktop-book-btn" id="navBook">Book Now</a>
   </header>
 
   <!-- HERO SECTION -->
-  <section id="home" class="hero fade-up">
-    <div class="hero-text">
-      <p class="small-heading"
-         data-en="Compassionate Breastfeeding Guidance"
-         data-gu="સ્નેહભર્યું સ્તનપાન માર્ગદર્શન">
-         Compassionate Breastfeeding Guidance
-      </p>
-
-      <h1 data-en="Support for Every Mother’s Breastfeeding Journey"
-          data-gu="દરેક માતાના સ્તનપાન પ્રવાસ માટે વિશ્વાસભર્યો સહારો">
-          Support for Every Mother’s Breastfeeding Journey
-      </h1>
-
-      <p class="hero-description"
-         data-en="Personalized lactation and breastfeeding support for latch issues, low milk supply, nipple pain, pumping, weaning, and newborn feeding concerns."
-         data-gu="લેચ સમસ્યા, દૂધ ઓછું આવવું, નિપલમાં દુખાવો, પમ્પિંગ, વીનિંગ અને નવજાતના ફીડિંગ સંબંધિત પ્રશ્નો માટે વ્યક્તિગત માર્ગદર્શન.">
-         Personalized lactation and breastfeeding support for latch issues, low milk supply, nipple pain, pumping, weaning, and newborn feeding concerns.
+  <section id="home" class="hero">
+    <div class="hero-text fade-up">
+      <p class="small-heading" id="heroTag">Compassionate Breastfeeding Guidance</p>
+      <h1 id="heroTitle">Support for Every Mother’s Breastfeeding Journey</h1>
+      <p class="hero-description" id="heroDesc">
+        Personalized lactation and breastfeeding support for latch issues, low milk supply, nipple pain, pumping, weaning, and newborn feeding concerns.
       </p>
 
       <div class="hero-buttons">
-        <a href="#contact" class="primary-btn" data-en="Book Consultation" data-gu="કન્સલ્ટેશન બુક કરો">Book Consultation</a>
-        <a href="https://wa.me/919274284078" target="_blank" class="secondary-btn" data-en="WhatsApp Now" data-gu="હવે WhatsApp કરો">WhatsApp Now</a>
+        <a href="#contact" class="primary-btn" id="heroBtn1">Book Consultation</a>
+        <a href="https://wa.me/919274284078" target="_blank" class="secondary-btn" id="heroBtn2">WhatsApp Now</a>
+      </div>
+
+      <div class="trust-mini-strip">
+        <span id="trust1">✔ Personalized Support</span>
+        <span id="trust2">✔ Evidence-Based Guidance</span>
+        <span id="trust3">✔ Mother-Centered Care</span>
       </div>
     </div>
 
-    <div class="hero-image">
+    <div class="hero-image fade-up">
       <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1200&auto=format&fit=crop" alt="Mother and baby">
     </div>
   </section>
 
- <!-- COMMON BREASTFEEDING CONCERNS SECTION -->
-<section id="problem" class="problems-section">
-  <div class="section-header fade-up">
-    <p class="section-tag" data-en="How We Help" data-gu="અમે કેવી રીતે મદદ કરીએ">How We Help</p>
-    <h2 data-en="Common Breastfeeding Concerns We Solve" data-gu="સામાન્ય સ્તનપાન સમસ્યાઓ જેમાં અમે મદદ કરીએ">
-      Common Breastfeeding Concerns We Solve
-    </h2>
-    <p class="section-subtext"
-       data-en="Every mother’s feeding journey is different. We provide calm, practical, and expert support for the most common breastfeeding struggles."
-       data-gu="દરેક માતાની સ્તનપાન યાત્રા અલગ હોય છે. અમે સામાન્ય સ્તનપાનની મુશ્કેલીઓ માટે શાંતિપૂર્ણ, પ્રેક્ટિકલ અને નિષ્ણાત માર્ગદર્શન આપીએ છીએ.">
-      Every mother’s feeding journey is different. We provide calm, practical, and expert support for the most common breastfeeding struggles.
-    </p>
-  </div>
+  <!-- COUNTER SECTION -->
+  <section class="counter-section">
+    <div class="counter-grid">
+      <div class="counter-card fade-up">
+        <h3><span class="counter" data-target="500">0</span>+</h3>
+        <p id="counter1">Mothers Supported</p>
+      </div>
+      <div class="counter-card fade-up">
+        <h3><span class="counter" data-target="98">0</span>%</h3>
+        <p id="counter2">Mother Satisfaction</p>
+      </div>
+      <div class="counter-card fade-up">
+        <h3><span class="counter" data-target="7">0</span>+</h3>
+        <p id="counter3">Common Feeding Concerns Covered</p>
+      </div>
+      <div class="counter-card fade-up">
+        <h3><span class="counter" data-target="100">0</span>%</h3>
+        <p id="counter4">Compassionate Care</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="problems-grid">
-
-    <div class="problem-card fade-up">
-      <div class="problem-icon">🤱</div>
-      <h3 data-en="Painful Breastfeeding" data-gu="દુખાવા સાથે સ્તનપાન">Painful Breastfeeding</h3>
-      <p data-en="Support for nipple pain, soreness, and painful feeding sessions."
-         data-gu="નિપલ પેઇન, દુખાવો અને પીડાદાયક ફીડિંગ માટે માર્ગદર્શન.">
-        Support for nipple pain, soreness, and painful feeding sessions.
+  <!-- COMMON PROBLEMS SECTION -->
+  <section id="problem" class="problems-section">
+    <div class="section-header fade-up">
+      <p class="section-tag" id="problemTag">How We Help</p>
+      <h2 id="problemTitle">Common Breastfeeding Problems We Support</h2>
+      <p class="section-subtext" id="problemDesc">
+        Personalized care for the most common breastfeeding and newborn feeding concerns faced by mothers.
       </p>
     </div>
 
-    <div class="problem-card fade-up">
-      <div class="problem-icon">👶</div>
-      <h3 data-en="Poor Latch" data-gu="બેબી સાચું latch ન કરવું">Poor Latch</h3>
-      <p data-en="Guidance to help your baby latch correctly and feed effectively."
-         data-gu="બેબીને યોગ્ય રીતે latch કરાવવા અને સારું feed કરાવવા માર્ગદર્શન.">
-        Guidance to help your baby latch correctly and feed effectively.
-      </p>
+    <div class="problems-grid">
+      <div class="problem-card fade-up">
+        <h3 id="problem1Title">Painful Breastfeeding</h3>
+        <p id="problem1Desc">Support for nipple pain, sore feeding, and uncomfortable breastfeeding sessions.</p>
+      </div>
+
+      <div class="problem-card fade-up">
+        <h3 id="problem2Title">Poor Latch</h3>
+        <p id="problem2Desc">Guidance to help your baby latch correctly and feed more effectively.</p>
+      </div>
+
+      <div class="problem-card fade-up">
+        <h3 id="problem3Title">Low Milk Supply</h3>
+        <p id="problem3Desc">Assessment and practical strategies to improve milk production naturally.</p>
+      </div>
+
+      <div class="problem-card fade-up">
+        <h3 id="problem4Title">Breast Refusal</h3>
+        <p id="problem4Desc">Help when baby is refusing breastfeeds or struggling during feeding time.</p>
+      </div>
+
+      <div class="problem-card fade-up">
+        <h3 id="problem5Title">Cracked Nipples</h3>
+        <p id="problem5Desc">Gentle support and feeding correction to reduce pain and promote healing.</p>
+      </div>
+
+      <div class="problem-card fade-up">
+        <h3 id="problem6Title">Engorgement</h3>
+        <p id="problem6Desc">Relief and feeding guidance for fullness, heaviness, and breast discomfort.</p>
+      </div>
+
+      <div class="problem-card fade-up">
+        <h3 id="problem7Title">Pumping Guidance</h3>
+        <p id="problem7Desc">Support for pumping, storing milk, and building a flexible feeding routine.</p>
+      </div>
+
+      <div class="problem-card fade-up">
+        <h3 id="problem8Title">Weaning Support</h3>
+        <p id="problem8Desc">Safe and smooth transition guidance for babies and mothers during weaning.</p>
+      </div>
     </div>
-
-    <div class="problem-card fade-up">
-      <div class="problem-icon">🍼</div>
-      <h3 data-en="Low Milk Supply" data-gu="દૂધ ઓછું આવવું">Low Milk Supply</h3>
-      <p data-en="Assessment and natural strategies to improve milk production."
-         data-gu="દૂધની માત્રા સુધારવા માટે મૂલ્યાંકન અને પ્રાકૃતિક માર્ગદર્શન.">
-        Assessment and natural strategies to improve milk production.
-      </p>
-    </div>
-
-    <div class="problem-card fade-up">
-      <div class="problem-icon">😣</div>
-      <h3 data-en="Breast Refusal" data-gu="બેબી સ્તનપાનથી ઇન્કાર કરે">Breast Refusal</h3>
-      <p data-en="Help when your baby refuses to breastfeed or feeds poorly."
-         data-gu="જ્યારે બેબી સ્તનપાન ન કરે અથવા યોગ્ય રીતે ફીડ ન કરે ત્યારે મદદ.">
-        Help when your baby refuses to breastfeed or feeds poorly.
-      </p>
-    </div>
-
-    <div class="problem-card fade-up">
-      <div class="problem-icon">💢</div>
-      <h3 data-en="Cracked Nipples" data-gu="ફાટેલા નિપલ્સ">Cracked Nipples</h3>
-      <p data-en="Gentle support to reduce pain and improve feeding comfort."
-         data-gu="દુખાવો ઓછો કરવા અને આરામદાયક ફીડિંગ માટે સહાય.">
-        Gentle support to reduce pain and improve feeding comfort.
-      </p>
-    </div>
-
-    <div class="problem-card fade-up">
-      <div class="problem-icon">🌿</div>
-      <h3 data-en="Engorgement" data-gu="સ્તનમાં ભારેપણું / સૂજન">Engorgement</h3>
-      <p data-en="Relief and guidance for breast fullness, heaviness, and discomfort."
-         data-gu="સ્તનમાં ભરાવ, ભારેપણું અને અસ્વસ્થતા માટે રાહત અને માર્ગદર્શન.">
-        Relief and guidance for breast fullness, heaviness, and discomfort.
-      </p>
-    </div>
-
-    <div class="problem-card fade-up">
-      <div class="problem-icon">🧊</div>
-      <h3 data-en="Pumping Guidance" data-gu="પંપિંગ માર્ગદર્શન">Pumping Guidance</h3>
-      <p data-en="Support for pumping, milk storage, and feeding routines."
-         data-gu="પંપિંગ, દૂધ સ્ટોરેજ અને ફીડિંગ રૂટીન માટે માર્ગદર્શન.">
-        Support for pumping, milk storage, and feeding routines.
-      </p>
-    </div>
-
-    <div class="problem-card fade-up">
-      <div class="problem-icon">🌼</div>
-      <h3 data-en="Weaning Support" data-gu="વીનિંગ માર્ગદર્શન">Weaning Support</h3>
-      <p data-en="Gentle and safe guidance for transitioning from breastfeeding."
-         data-gu="સ્તનપાન છોડાવવાની સલામત અને સરળ માર્ગદર્શન સેવા.">
-        Gentle and safe guidance for transitioning from breastfeeding.
-      </p>
-    </div>
-
-  </div>
-</section>
-
+  </section>
 
   <!-- SERVICES SECTION -->
-  <section id="services" class="services-section fade-up">
-    <div class="section-header">
-      <p class="section-tag" data-en="Our Services" data-gu="અમારી સેવાઓ">Our Services</p>
-      <h2 data-en="Breastfeeding Consultations Designed for Mothers"
-          data-gu="માતાઓ માટે ખાસ તૈયાર કરેલ સ્તનપાન કન્સલ્ટેશન">
-          Breastfeeding Consultations Designed for Mothers
-      </h2>
-      <p class="section-subtext"
-         data-en="Professional support tailored to your motherhood stage and feeding journey."
-         data-gu="તમારી માતૃત્વની જરૂરિયાત અને ફીડિંગ સફર પ્રમાણે વ્યક્તિગત માર્ગદર્શન.">
-         Professional support tailored to your motherhood stage and feeding journey.
+  <section id="services" class="services-section">
+    <div class="section-header fade-up">
+      <p class="section-tag" id="servicesTag">Our Services</p>
+      <h2 id="servicesTitle">Breastfeeding Consultations Designed for Mothers</h2>
+      <p class="section-subtext" id="servicesDesc">
+        Professional support tailored to your motherhood stage and feeding journey.
       </p>
     </div>
 
     <div class="services-grid">
-      <div class="service-card">
-        <h3 data-en="Clinic Consultation" data-gu="ક્લિનિક કન્સલ્ટેશન">Clinic Consultation</h3>
-        <p data-en="One-to-one in-person breastfeeding support and feeding assessment."
-           data-gu="વ્યક્તિગત રીતે સ્તનપાન માર્ગદર્શન અને ફીડિંગ મૂલ્યાંકન.">
-           One-to-one in-person breastfeeding support and feeding assessment.
-        </p>
+      <div class="service-card fade-up">
+        <h3 id="service1Title">Clinic Consultation</h3>
+        <p id="service1Desc">One-to-one in-person breastfeeding support and feeding assessment.</p>
         <span>45–60 mins</span>
       </div>
 
-      <div class="service-card">
-        <h3 data-en="Video Consultation" data-gu="વિડિયો કન્સલ્ટેશન">Video Consultation</h3>
-        <p data-en="Expert online support from the comfort of your home."
-           data-gu="ઘરે બેઠા નિષ્ણાત માર્ગદર્શન.">
-           Expert online support from the comfort of your home.
-        </p>
+      <div class="service-card fade-up">
+        <h3 id="service2Title">Video Consultation</h3>
+        <p id="service2Desc">Expert online support from the comfort of your home.</p>
         <span>45–60 mins</span>
       </div>
 
-      <div class="service-card">
-        <h3 data-en="Phone Consultation" data-gu="ફોન કન્સલ્ટેશન">Phone Consultation</h3>
-        <p data-en="Quick and practical guidance for urgent feeding doubts."
-           data-gu="ફીડિંગ સંબંધિત તાત્કાલિક પ્રશ્નો માટે ઝડપી માર્ગદર્શન.">
-           Quick and practical guidance for urgent feeding doubts.
-        </p>
+      <div class="service-card fade-up">
+        <h3 id="service3Title">Phone Consultation</h3>
+        <p id="service3Desc">Quick and practical guidance for urgent feeding doubts.</p>
         <span>20–30 mins</span>
       </div>
 
-      <div class="service-card">
-        <h3 data-en="Prenatal Guidance" data-gu="પ્રિનેટલ માર્ગદર્શન">Prenatal Guidance</h3>
-        <p data-en="Breastfeeding preparation and confidence-building before delivery."
-           data-gu="ડિલિવરી પહેલાં સ્તનપાન માટે તૈયારી અને આત્મવિશ્વાસ વધારવા માટે માર્ગદર્શન.">
-           Breastfeeding preparation and confidence-building before delivery.
-        </p>
+      <div class="service-card fade-up">
+        <h3 id="service4Title">Prenatal Guidance</h3>
+        <p id="service4Desc">Breastfeeding preparation and confidence-building before delivery.</p>
         <span>30–45 mins</span>
       </div>
 
-      <div class="service-card">
-        <h3 data-en="Postnatal Support" data-gu="પોસ્ટનેટલ સપોર્ટ">Postnatal Support</h3>
-        <p data-en="Support for latch, milk supply, pain, and newborn feeding concerns."
-           data-gu="લેચ, દૂધની માત્રા, દુખાવો અને નવજાત ફીડિંગ સમસ્યાઓ માટે સહાય.">
-           Support for latch, milk supply, pain, and newborn feeding concerns.
-        </p>
+      <div class="service-card fade-up">
+        <h3 id="service5Title">Postnatal Support</h3>
+        <p id="service5Desc">Support for latch, milk supply, pain, and newborn feeding concerns.</p>
         <span>45–60 mins</span>
       </div>
 
-      <div class="service-card">
-        <h3 data-en="Weaning Consultation" data-gu="વીનિંગ કન્સલ્ટેશન">Weaning Consultation</h3>
-        <p data-en="Step-by-step help for gentle and healthy baby-led weaning."
-           data-gu="બાળક માટે સલામત અને સરળ વીનિંગ માટે સ્ટેપ-બાય-સ્ટેપ માર્ગદર્શન.">
-           Step-by-step help for gentle and healthy baby-led weaning.
-        </p>
+      <div class="service-card fade-up">
+        <h3 id="service6Title">Weaning Consultation</h3>
+        <p id="service6Desc">Step-by-step help for gentle and healthy baby-led weaning.</p>
         <span>30–45 mins</span>
       </div>
     </div>
   </section>
 
-  <!-- PACKAGES SECTION -->
-  <section id="packages" class="packages-section fade-up">
-    <div class="section-header">
-      <p class="section-tag" data-en="Care Plans" data-gu="કેર પ્લાન્સ">Care Plans</p>
-      <h2 data-en="Support Packages Designed for Mothers"
-          data-gu="માતાઓ માટે ખાસ તૈયાર કરેલા સપોર્ટ પેકેજીસ">
-          Support Packages Designed for Mothers
-      </h2>
-      <p class="section-subtext"
-         data-en="Thoughtfully created consultation plans to give mothers continued breastfeeding guidance and confidence."
-         data-gu="માતાઓને સતત માર્ગદર્શન અને આત્મવિશ્વાસ આપવા માટે વિચારીને બનાવેલા પ્લાન્સ.">
-         Thoughtfully created consultation plans to give mothers continued breastfeeding guidance and confidence.
-      </p>
+  <!-- BEFORE / AFTER TRUST SECTION -->
+  <section class="trust-section">
+    <div class="section-header fade-up">
+      <p class="section-tag" id="trustTag">Transformation</p>
+      <h2 id="trustTitle">From Feeding Stress to Feeding Confidence</h2>
+      <p class="section-subtext" id="trustDesc">How mothers often feel before and after proper lactation guidance.</p>
     </div>
 
-    <div class="packages-grid">
-      <div class="package-card">
-        <h3 data-en="New Mom Support Plan" data-gu="નવી માતા સપોર્ટ પ્લાન">New Mom Support Plan</h3>
-        <p data-en="Ideal for early breastfeeding struggles and first-time mothers."
-           data-gu="શરૂઆતની સ્તનપાન સમસ્યાઓ અને પ્રથમ વખત માતા બનનાર માટે ઉત્તમ.">
-           Ideal for early breastfeeding struggles and first-time mothers.
-        </p>
+    <div class="trust-grid">
+      <div class="trust-box before fade-up">
+        <h3 id="beforeTitle">Before Support</h3>
         <ul>
-          <li data-en="2 Video Consultations" data-gu="2 વિડિયો કન્સલ્ટેશન">2 Video Consultations</li>
-          <li data-en="15 Days WhatsApp Support" data-gu="15 દિવસ WhatsApp સપોર્ટ">15 Days WhatsApp Support</li>
-          <li data-en="1 Follow-up Guidance" data-gu="1 ફોલો-અપ માર્ગદર્શન">1 Follow-up Guidance</li>
+          <li id="before1">Pain during feeding</li>
+          <li id="before2">Baby not latching well</li>
+          <li id="before3">Fear of low milk supply</li>
+          <li id="before4">Stress and confusion</li>
         </ul>
-        <span>₹1399</span>
       </div>
 
-      <div class="package-card featured-package">
-        <p class="popular-badge" data-en="Most Popular" data-gu="સૌથી લોકપ્રિય">Most Popular</p>
-        <h3 data-en="Complete Breastfeeding Care Plan" data-gu="સંપૂર્ણ સ્તનપાન કેર પ્લાન">Complete Breastfeeding Care Plan</h3>
-        <p data-en="Best for mothers who need complete support and follow-up care."
-           data-gu="સંપૂર્ણ માર્ગદર્શન અને ફોલો-અપ કાળજી ઈચ્છતી માતાઓ માટે શ્રેષ્ઠ.">
-           Best for mothers who need complete support and follow-up care.
-        </p>
+      <div class="trust-box after fade-up">
+        <h3 id="afterTitle">After Guidance</h3>
         <ul>
-          <li data-en="2 Consultations" data-gu="2 કન્સલ્ટેશન">2 Consultations</li>
-          <li data-en="30 Days WhatsApp Support" data-gu="30 દિવસ WhatsApp સપોર્ટ">30 Days WhatsApp Support</li>
-          <li data-en="Personalized Feeding Guidance" data-gu="વ્યક્તિગત ફીડિંગ માર્ગદર્શન">Personalized Feeding Guidance</li>
-          <li data-en="Priority Follow-up" data-gu="પ્રાથમિક ફોલો-અપ">Priority Follow-up</li>
+          <li id="after1">More confident feeding</li>
+          <li id="after2">Improved latch support</li>
+          <li id="after3">Clear practical steps</li>
+          <li id="after4">Calm and empowered motherhood</li>
         </ul>
-        <span>₹2499</span>
-      </div>
-
-      <div class="package-card">
-        <h3 data-en="Prenatal + Postnatal Combo" data-gu="પ્રિનેટલ + પોસ્ટનેટલ કોમ્બો">Prenatal + Postnatal Combo</h3>
-        <p data-en="Perfect for mothers who want guidance before and after delivery."
-           data-gu="ડિલિવરી પહેલાં અને પછી બંને સમયગાળામાં માર્ગદર્શન ઈચ્છતી માતાઓ માટે ઉત્તમ.">
-           Perfect for mothers who want guidance before and after delivery.
-        </p>
-        <ul>
-          <li data-en="1 Prenatal Session" data-gu="1 પ્રિનેટલ સેશન">1 Prenatal Session</li>
-          <li data-en="1 Post-Delivery Session" data-gu="1 પોસ્ટ-ડિલિવરી સેશન">1 Post-Delivery Session</li>
-          <li data-en="1 Follow-up Consultation" data-gu="1 ફોલો-અપ કન્સલ્ટેશન">1 Follow-up Consultation</li>
-        </ul>
-        <span>₹1999</span>
       </div>
     </div>
   </section>
 
   <!-- ABOUT SECTION -->
-  <section id="about" class="about-section fade-up">
+  <section id="about" class="about-section">
     <div class="about-container">
-      <div class="about-image">
-        <img src="doctor-bhoomi.jpg" alt="Dr Bhoomi Vikani-Lactation Consultant">
+      <div class="about-image fade-up">
+        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1200&auto=format&fit=crop" alt="Dr Bhoomi Vikani">
       </div>
 
-      <div class="about-content">
-        <p class="section-tag" data-en="Meet Your Consultant" data-gu="તમારા કન્સલ્ટન્ટને મળો">Meet Your Consultant</p>
-        <h2>Dr. Bhoomi Vikani</h2>
-        <p class="about-subtitle" data-en="Certified Lactation Consultant • Mother’s Touch" data-gu="સર્ટિફાઇડ લેક્ટેશન કન્સલ્ટન્ટ • મધર્સ ટચ">Certified Lactation Consultant • Mother’s Touch</p>
+      <div class="about-content fade-up">
+        <p class="section-tag" id="aboutTag">Meet Your Consultant</p>
+        <h2 id="aboutTitle">Dr. Bhoomi Vikani</h2>
+        <p class="about-subtitle" id="aboutSub">Certified Lactation Consultant • Mother’s Touch</p>
 
-        <p data-en="Dr. Bhoomi Vikani is dedicated to helping mothers navigate their breastfeeding journey with confidence, comfort, and clarity through compassionate and personalized lactation support."
-           data-gu="ડૉ. ભૂમિ વિકાણી માતાઓને વિશ્વાસ, આરામ અને સ્પષ્ટતા સાથે સ્તનપાનની સફર પાર પાડવામાં સ્નેહભર્યું અને વ્યક્તિગત માર્ગદર્શન આપે છે.">
-           Dr. Bhoomi Vikani is dedicated to helping mothers navigate their breastfeeding journey with confidence, comfort, and clarity through compassionate and personalized lactation support.
+        <p id="aboutP1">
+          Dr. Bhoomi Vikani is dedicated to helping mothers navigate their breastfeeding journey with confidence, comfort, and clarity through compassionate and personalized lactation support.
         </p>
 
-        <p data-en="From latch issues and nipple pain to low milk supply, pumping guidance, and weaning support — every consultation is designed to provide practical, evidence-based care tailored to the unique needs of mother and baby."
-           data-gu="લેચ સમસ્યા, નિપલમાં દુખાવો, દૂધ ઓછું આવવું, પમ્પિંગ માર્ગદર્શન કે વીનિંગ સપોર્ટ — દરેક કન્સલ્ટેશન માતા અને બાળકની ખાસ જરૂરિયાત મુજબ તૈયાર કરવામાં આવે છે.">
-           From latch issues and nipple pain to low milk supply, pumping guidance, and weaning support — every consultation is designed to provide practical, evidence-based care tailored to the unique needs of mother and baby.
+        <p id="aboutP2">
+          From latch issues and nipple pain to low milk supply, pumping guidance, and weaning support — every consultation is designed to provide practical, evidence-based care tailored to the unique needs of mother and baby.
         </p>
 
-        <p data-en="At Mother’s Touch, the goal is simple: to make every mother feel supported, understood, and empowered throughout her feeding journey."
-           data-gu="મધર્સ ટચનું એક જ લક્ષ્ય છે — દરેક માતાને તેમની ફીડિંગ સફરમાં સહારો, સમજણ અને આત્મવિશ્વાસ આપવો.">
-           At Mother’s Touch, the goal is simple: to make every mother feel supported, understood, and empowered throughout her feeding journey.
+        <p id="aboutP3">
+          At Mother’s Touch, the goal is simple: to make every mother feel supported, understood, and empowered throughout her feeding journey.
         </p>
 
         <div class="about-highlights">
-          <div class="highlight-box" data-en="One-to-One Personalized Guidance" data-gu="વ્યક્તિગત માર્ગદર્શન">One-to-One Personalized Guidance</div>
-          <div class="highlight-box" data-en="Evidence-Based Breastfeeding Support" data-gu="વિજ્ઞાન આધારિત માર્ગદર્શન">Evidence-Based Breastfeeding Support</div>
-          <div class="highlight-box" data-en="Online & Offline Consultations" data-gu="ઓનલાઇન અને ઑફલાઇન કન્સલ્ટેશન">Online & Offline Consultations</div>
+          <div class="highlight-box" id="aboutHighlight1">One-to-One Personalized Guidance</div>
+          <div class="highlight-box" id="aboutHighlight2">Evidence-Based Breastfeeding Support</div>
+          <div class="highlight-box" id="aboutHighlight3">Online & Offline Consultations</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- WHY SECTION -->
-  <section id="why" class="why-section fade-up">
-    <div class="section-header">
-      <p class="section-tag" data-en="Why Choose Us" data-gu="અમને કેમ પસંદ કરો">Why Choose Us</p>
-      <h2 data-en="Why Mothers Trust Mother’s Touch"
-          data-gu="માતાઓ મધર્સ ટચ પર કેમ વિશ્વાસ કરે છે">
-          Why Mothers Trust Mother’s Touch
-      </h2>
-      <p class="section-subtext"
-         data-en="A calm, supportive, and expert space where mothers receive practical breastfeeding care tailored to their journey."
-         data-gu="શાંત, સહાયક અને નિષ્ણાત માર્ગદર્શન આપતું સ્થળ જ્યાં માતાઓને તેમની જરૂર મુજબ કાળજી મળે છે.">
-         A calm, supportive, and expert space where mothers receive practical breastfeeding care tailored to their journey.
+  <section id="why" class="why-section">
+    <div class="section-header fade-up">
+      <p class="section-tag" id="whyTag">Why Choose Us</p>
+      <h2 id="whyTitle">Why Mothers Trust Mother’s Touch</h2>
+      <p class="section-subtext" id="whyDesc">
+        A calm, supportive, and expert space where mothers receive practical breastfeeding care tailored to their journey.
       </p>
     </div>
 
     <div class="why-grid">
-      <div class="why-card">
-        <h3 data-en="Personalized Support" data-gu="વ્યક્તિગત સપોર્ટ">Personalized Support</h3>
-        <p data-en="Every mother and baby pair is different, and so is the guidance we offer."
-           data-gu="દરેક માતા અને બાળક અલગ છે, તેથી માર્ગદર્શન પણ વ્યક્તિગત છે.">
-           Every mother and baby pair is different, and so is the guidance we offer.
-        </p>
+      <div class="why-card fade-up">
+        <h3 id="why1Title">Personalized Support</h3>
+        <p id="why1Desc">Every mother and baby pair is different, and so is the guidance we offer.</p>
       </div>
 
-      <div class="why-card">
-        <h3 data-en="Compassionate Care" data-gu="સ્નેહભર્યું માર્ગદર્શન">Compassionate Care</h3>
-        <p data-en="We understand the emotional side of breastfeeding and support you with patience."
-           data-gu="અમે સ્તનપાનની ભાવનાત્મક બાજુને સમજીએ છીએ અને ધીરજપૂર્વક સહારો આપીએ છીએ.">
-           We understand the emotional side of breastfeeding and support you with patience.
-        </p>
+      <div class="why-card fade-up">
+        <h3 id="why2Title">Compassionate Care</h3>
+        <p id="why2Desc">We understand the emotional side of breastfeeding and support you with patience.</p>
       </div>
 
-      <div class="why-card">
-        <h3 data-en="Evidence-Based Guidance" data-gu="વિજ્ઞાન આધારિત માર્ગદર્શન">Evidence-Based Guidance</h3>
-        <p data-en="Trusted advice based on modern breastfeeding principles and practical care."
-           data-gu="આધુનિક સ્તનપાન સિદ્ધાંતો અને પ્રાયોગિક કાળજી પર આધારિત વિશ્વાસપાત્ર સલાહ.">
-           Trusted advice based on modern breastfeeding principles and practical care.
-        </p>
+      <div class="why-card fade-up">
+        <h3 id="why3Title">Evidence-Based Guidance</h3>
+        <p id="why3Desc">Trusted advice based on modern breastfeeding principles and practical care.</p>
       </div>
 
-      <div class="why-card">
-        <h3 data-en="Flexible Consultation Options" data-gu="લવચીક કન્સલ્ટેશન વિકલ્પો">Flexible Consultation Options</h3>
-        <p data-en="Choose support through clinic visits, video sessions, or guided follow-ups."
-           data-gu="ક્લિનિક, વિડિયો સેશન અથવા ફોલો-અપ દ્વારા અનુકૂળ માર્ગદર્શન મેળવો.">
-              Choose support through clinic visits, video sessions, or guided follow-ups.
-        </p>
+      <div class="why-card fade-up">
+        <h3 id="why4Title">Flexible Consultation Options</h3>
+        <p id="why4Desc">Choose support through clinic visits, video sessions, or guided follow-ups.</p>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section id="reviews" class="testimonials-section fade-up">
-    <div class="section-header">
-      <p class="section-tag" data-en="Patient Love" data-gu="માતાઓનો વિશ્વાસ">Patient Love</p>
-      <h2 data-en="What Mothers Say About Their Experience"
-          data-gu="માતાઓ તેમના અનુભવ વિશે શું કહે છે">
-          What Mothers Say About Their Experience
-      </h2>
-      <p class="section-subtext"
-         data-en="Kind words from mothers who found comfort, confidence, and support through Mother’s Touch."
-         data-gu="મધર્સ ટચથી સહારો, આત્મવિશ્વાસ અને આરામ મેળવનાર માતાઓના અનુભવ.">
-         Kind words from mothers who found comfort, confidence, and support through Mother’s Touch.
+  <!-- REVIEWS SECTION -->
+  <section id="reviews" class="testimonials-section">
+    <div class="section-header fade-up">
+      <p class="section-tag" id="reviewsTag">Patient Love</p>
+      <h2 id="reviewsTitle">What Mothers Say About Their Experience</h2>
+      <p class="section-subtext" id="reviewsDesc">
+        Kind words from mothers who found comfort, confidence, and support through Mother’s Touch.
       </p>
     </div>
 
+    <div class="google-review-badge fade-up">
+      <span>⭐ 4.9/5</span>
+      <p id="reviewBadgeText">Trusted by mothers for compassionate breastfeeding support</p>
+    </div>
+
     <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <p class="testimonial-text"
-           data-en="“I was struggling with latch and pain after delivery. Dr. Bhoomi guided me so calmly and clearly. It made a huge difference.”"
-           data-gu="“ડિલિવરી પછી મને લેચ અને દુખાવાની ઘણી સમસ્યા હતી. ડૉ. ભૂમિએ ખૂબ શાંતિથી અને સ્પષ્ટ રીતે માર્ગદર્શન આપ્યું. ઘણો ફરક પડ્યો.”">
-           “I was struggling with latch and pain after delivery. Dr. Bhoomi guided me so calmly and clearly. It made a huge difference.”
+      <div class="testimonial-card fade-up">
+        <div class="review-stars">★★★★★</div>
+        <p class="testimonial-text" id="review1Text">
+          “I was struggling with latch and pain after delivery. Dr. Bhoomi guided me so calmly and clearly. It made a huge difference.”
         </p>
-        <h4 data-en="— New Mother" data-gu="— નવી માતા">— New Mother</h4>
+        <h4 id="review1Name">— New Mother</h4>
       </div>
 
-      <div class="testimonial-card">
-        <p class="testimonial-text"
-           data-en="“Very practical support and so easy to understand. I felt heard and supported throughout the consultation.”"
-           data-gu="“ખૂબ જ પ્રેક્ટિકલ અને સરળ માર્ગદર્શન. આખી કન્સલ્ટેશન દરમિયાન મને સહારો અને સમજણ મળી.”">
-           “Very practical support and so easy to understand. I felt heard and supported throughout the consultation.”
+      <div class="testimonial-card fade-up">
+        <div class="review-stars">★★★★★</div>
+        <p class="testimonial-text" id="review2Text">
+          “Very practical support and so easy to understand. I felt heard and supported throughout the consultation.”
         </p>
-        <h4 data-en="— Happy Mom" data-gu="— ખુશ માતા">— Happy Mom</h4>
+        <h4 id="review2Name">— Happy Mom</h4>
       </div>
 
-      <div class="testimonial-card">
-        <p class="testimonial-text"
-           data-en="“Her breastfeeding guidance gave me confidence when I was feeling confused and stressed.”"
-           data-gu="“જ્યારે હું ગૂંચવણ અને તણાવમાં હતી ત્યારે તેમના માર્ગદર્શનથી મને ઘણો આત્મવિશ્વાસ મળ્યો.”">
-           “Her breastfeeding guidance gave me confidence when I was feeling confused and stressed.”
+      <div class="testimonial-card fade-up">
+        <div class="review-stars">★★★★★</div>
+        <p class="testimonial-text" id="review3Text">
+          “Her breastfeeding guidance gave me confidence when I was feeling confused and stressed.”
         </p>
-        <h4 data-en="— First-Time Mother" data-gu="— પ્રથમ વખત માતા">— First-Time Mother</h4>
+        <h4 id="review3Name">— First-Time Mother</h4>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section id="faq" class="faq-section fade-up">
-    <div class="section-header">
-      <p class="section-tag" data-en="FAQ" data-gu="વારંવાર પૂછાતા પ્રશ્નો">FAQ</p>
-      <h2 data-en="Frequently Asked Questions" data-gu="વારંવાર પૂછાતા પ્રશ્નો">Frequently Asked Questions</h2>
-      <p class="section-subtext"
-         data-en="Quick answers to common breastfeeding consultation questions."
-         data-gu="સ્તનપાન કન્સલ્ટેશન વિશે સામાન્ય પ્રશ્નોના ઝડપી જવાબો.">
-         Quick answers to common breastfeeding consultation questions.
+  <!-- INSTAGRAM REELS SECTION -->
+  <section class="reels-section">
+    <div class="section-header fade-up">
+      <p class="section-tag" id="reelTag">Social Presence</p>
+      <h2 id="reelTitle">Breastfeeding Education Through Reels</h2>
+      <p class="section-subtext" id="reelDesc">
+        Helpful awareness content created to support mothers with practical and simple breastfeeding guidance.
+      </p>
+    </div>
+
+    <div class="reels-grid">
+      <div class="reel-card fade-up">
+        <h3 id="reelCard1Title">Helpful Lactation Tips</h3>
+        <p id="reelCard1Desc">Simple and practical breastfeeding awareness content for mothers.</p>
+        <a href="https://instagram.com/mothers_touchig" target="_blank" class="primary-btn" id="reelBtn1">View Instagram</a>
+      </div>
+
+      <div class="reel-card fade-up">
+        <h3 id="reelCard2Title">Mother Education Content</h3>
+        <p id="reelCard2Desc">Educational posts and short-form guidance to help mothers feel more informed.</p>
+        <a href="https://instagram.com/mothers_touchig" target="_blank" class="secondary-btn" id="reelBtn2">Follow Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="faq-section">
+    <div class="section-header fade-up">
+      <p class="section-tag" id="faqTag">FAQ</p>
+      <h2 id="faqTitle">Frequently Asked Questions</h2>
+      <p class="section-subtext" id="faqDesc">
+        Quick answers to common breastfeeding consultation questions.
       </p>
     </div>
 
     <div class="faq-container">
-      <div class="faq-item">
-        <h3 data-en="When should I consult a lactation expert?" data-gu="લેક્ટેશન એક્સપર્ટનો સંપર્ક ક્યારે કરવો?">When should I consult a lactation expert?</h3>
-        <p data-en="If you are facing latch issues, pain, low milk supply, breast refusal, or confusion with feeding, it is the right time to seek support."
-           data-gu="જો તમને લેચ સમસ્યા, દુખાવો, દૂધ ઓછું આવવું, બાળક સ્તનપાન ન લેવું કે ફીડિંગ અંગે ગૂંચવણ હોય તો માર્ગદર્શન લેવું યોગ્ય છે.">
-           If you are facing latch issues, pain, low milk supply, breast refusal, or confusion with feeding, it is the right time to seek support.
-        </p>
+      <div class="faq-item fade-up">
+        <button class="faq-question">When should I consult a lactation expert? <span>+</span></button>
+        <div class="faq-answer">
+          <p>If you are facing latch issues, pain, low milk supply, breast refusal, or confusion with feeding, it is the right time to seek support.</p>
+        </div>
       </div>
 
-      <div class="faq-item">
-        <h3 data-en="Do you offer online consultations?" data-gu="શું ઑનલાઇન કન્સલ્ટેશન ઉપલબ્ધ છે?">Do you offer online consultations?</h3>
-        <p data-en="Yes, online video consultations are available for mothers who need support from home."
-           data-gu="હા, ઘરે બેઠા માર્ગદર્શન જોઈએ એવી માતાઓ માટે ઑનલાઇન વિડિયો કન્સલ્ટેશન ઉપલબ્ધ છે.">
-           Yes, online video consultations are available for mothers who need support from home.
-        </p>
+      <div class="faq-item fade-up">
+        <button class="faq-question">Do you offer online consultations? <span>+</span></button>
+        <div class="faq-answer">
+          <p>Yes, online video consultations are available for mothers who need support from home.</p>
+        </div>
       </div>
 
-      <div class="faq-item">
-        <h3 data-en="Can low milk supply be improved?" data-gu="દૂધ ઓછું આવતું હોય તો સુધારી શકાય?">Can low milk supply be improved?</h3>
-        <p data-en="In many cases, yes. Proper assessment and personalized guidance can help improve feeding and milk flow."
-           data-gu="ઘણા કેસમાં હા. યોગ્ય મૂલ્યાંકન અને વ્યક્તિગત માર્ગદર્શનથી સુધારો શક્ય છે.">
-           In many cases, yes. Proper assessment and personalized guidance can help improve feeding and milk flow.
-        </p>
+      <div class="faq-item fade-up">
+        <button class="faq-question">Can low milk supply be improved? <span>+</span></button>
+        <div class="faq-answer">
+          <p>In many cases, yes. Proper assessment and personalized guidance can help improve feeding and milk flow.</p>
+        </div>
       </div>
 
-      <div class="faq-item">
-        <h3 data-en="Is consultation helpful before delivery?" data-gu="ડિલિવરી પહેલાં કન્સલ્ટેશન ફાયદાકારક છે?">Is consultation helpful before delivery?</h3>
-        <p data-en="Yes, prenatal guidance helps mothers feel more prepared and confident about breastfeeding after birth."
-           data-gu="હા, પ્રિનેટલ માર્ગદર્શન માતાને ડિલિવરી પછીના સ્તનપાન માટે વધુ તૈયાર અને આત્મવિશ્વાસભર્યું બનાવે છે.">
-           Yes, prenatal guidance helps mothers feel more prepared and confident about breastfeeding after birth.
-        </p>
+      <div class="faq-item fade-up">
+        <button class="faq-question">Is consultation helpful before delivery? <span>+</span></button>
+        <div class="faq-answer">
+          <p>Yes, prenatal guidance helps mothers feel more prepared and confident about breastfeeding after birth.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="contact-section fade-up">
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section">
     <div class="contact-container">
-      <div class="contact-left">
-        <p class="section-tag" data-en="Get In Touch" data-gu="સંપર્ક કરો">Get In Touch</p>
-        <h2 data-en="Book Your Consultation Today" data-gu="આજે જ તમારું કન્સલ્ટેશન બુક કરો">Book Your Consultation Today</h2>
-        <p class="contact-subtext"
-           data-en="Whether you are facing breastfeeding difficulties or simply need expert guidance, Mother’s Touch is here to support you."
-           data-gu="જો તમને સ્તનપાનમાં મુશ્કેલી હોય અથવા નિષ્ણાત માર્ગદર્શન જોઈએ, તો મધર્સ ટચ તમારા માટે હાજર છે.">
-           Whether you are facing breastfeeding difficulties or simply need expert guidance, Mother’s Touch is here to support you.
+      <div class="contact-left fade-up">
+        <p class="section-tag" id="contactTag">Get In Touch</p>
+        <h2 id="contactTitle">Book Your Consultation Today</h2>
+        <p class="contact-subtext" id="contactDesc">
+          Whether you are facing breastfeeding difficulties or simply need expert guidance, Mother’s Touch is here to support you.
         </p>
 
         <div class="quick-contact-strip">
-          <a href="tel:+919274284078">📞 <span data-en="Call Now" data-gu="હવે કૉલ કરો">Call Now</span></a>
-          <a href="https://wa.me/919274284078" target="_blank">💬 <span data-en="WhatsApp" data-gu="WhatsApp">WhatsApp</span></a>
-          <a href="https://instagram.com/mothers_touchig" target="_blank">📷 <span data-en="Instagram" data-gu="Instagram">Instagram</span></a>
+          <a href="tel:+919274284078" id="callBtn">📞 Call Now</a>
+          <a href="https://wa.me/919274284078" target="_blank" id="waBtn">💬 WhatsApp</a>
+          <a href="https://instagram.com/mothers_touchig" target="_blank" id="igBtn">📷 Instagram</a>
         </div>
 
         <div class="contact-info-box">
-          <h4 data-en="Consultation Options" data-gu="કન્સલ્ટેશન વિકલ્પો">Consultation Options</h4>
-          <p data-en="Available for in-clinic, video, and guided breastfeeding consultations."
-             data-gu="ક્લિનિક, વિડિયો અને માર્ગદર્શિત સ્તનપાન કન્સલ્ટેશન માટે ઉપલબ્ધ.">
-             Available for in-clinic, video, and guided breastfeeding consultations.
-          </p>
+          <h4 id="contactBox1Title">Consultation Options</h4>
+          <p id="contactBox1Desc">Available for in-clinic, video, and guided breastfeeding consultations.</p>
         </div>
 
         <div class="contact-info-box">
-          <h4 data-en="WhatsApp Support" data-gu="WhatsApp સપોર્ટ">WhatsApp Support</h4>
-          <p data-en="Quick communication for appointment inquiries and breastfeeding support."
-             data-gu="એપોઇન્ટમેન્ટ અને સ્તનપાન માર્ગદર્શન માટે ઝડપી સંપર્ક.">
-             Quick communication for appointment inquiries and breastfeeding support.
-          </p>
+          <h4 id="contactBox2Title">WhatsApp Support</h4>
+          <p id="contactBox2Desc">Quick communication for appointment inquiries and breastfeeding support.</p>
         </div>
 
         <div class="contact-info-box">
-          <h4 data-en="Working Hours" data-gu="કામકાજ સમય">Working Hours</h4>
-          <p data-en="By appointment only • Flexible consultation timings available"
-             data-gu="માત્ર એપોઇન્ટમેન્ટ દ્વારા • અનુકૂળ સમય ઉપલબ્ધ">
-             By appointment only • Flexible consultation timings available
-          </p>
+          <h4 id="contactBox3Title">Working Hours</h4>
+          <p id="contactBox3Desc">By appointment only • Flexible consultation timings available</p>
         </div>
 
         <div class="contact-info-box">
-          <h4 data-en="Clinic Address" data-gu="ક્લિનિક સરનામું">Clinic Address</h4>
-          <p data-en="Possible Triangle, Mavdi Bypass Rd, Mavdi Village, Mavdi, Rajkot, Gujarat 360004."
-             data-gu="Possible Triangle, Mavdi Bypass Rd, Mavdi Village, Mavdi, Rajkot, Gujarat 360004.">
-             Possible Triangle, Mavdi Bypass Rd, Mavdi Village, Mavdi, Rajkot, Gujarat 360004.
-          </p>
+          <h4 id="contactBox4Title">Clinic Address</h4>
+          <p id="contactBox4Desc">Possible Triangle, Mavdi Bypass Rd, Mavdi Village, Mavdi, Rajkot, Gujarat 360004.</p>
         </div>
       </div>
 
-      <div class="contact-right">
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" required data-placeholder-en="Your Name" data-placeholder-gu="તમારું નામ">
-          <input type="tel" placeholder="Phone Number" required data-placeholder-en="Phone Number" data-placeholder-gu="ફોન નંબર">
-          <input type="email" placeholder="Email Address" data-placeholder-en="Email Address" data-placeholder-gu="ઈમેઈલ એડ્રેસ">
+      <div class="contact-right fade-up">
+        <form class="contact-form" action="https://formsubmit.co/YOUR-EMAIL@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New Inquiry from Mother's Touch Website">
+          <input type="hidden" name="_template" value="table">
 
-          <select required>
-            <option value="" data-en="I need help with..." data-gu="મને મદદ જોઈએ છે...">I need help with...</option>
-            <option data-en="Latch Issues" data-gu="લેચ સમસ્યા">Latch Issues</option>
-            <option data-en="Low Milk Supply" data-gu="દૂધ ઓછું આવવું">Low Milk Supply</option>
-            <option data-en="Painful Breastfeeding" data-gu="દુખાવાવાળું સ્તનપાન">Painful Breastfeeding</option>
-            <option data-en="Pumping Guidance" data-gu="પમ્પિંગ માર્ગદર્શન">Pumping Guidance</option>
-            <option data-en="Weaning Support" data-gu="વીનિંગ માર્ગદર્શન">Weaning Support</option>
-            <option data-en="General Consultation" data-gu="જનરલ કન્સલ્ટેશન">General Consultation</option>
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <input type="email" name="email" placeholder="Email Address">
+
+          <select name="help" required>
+            <option value="">I need help with...</option>
+            <option>Latch Issues</option>
+            <option>Low Milk Supply</option>
+            <option>Painful Breastfeeding</option>
+            <option>Pumping Guidance</option>
+            <option>Weaning Support</option>
+            <option>General Consultation</option>
           </select>
 
-          <textarea rows="5" placeholder="Tell us briefly about your concern"
-            data-placeholder-en="Tell us briefly about your concern"
-            data-placeholder-gu="તમારી સમસ્યા વિશે ટૂંકમાં લખો"></textarea>
+          <textarea rows="5" name="message" placeholder="Tell us briefly about your concern"></textarea>
 
-          <button type="submit" data-en="Send Inquiry" data-gu="માહિતી મોકલો">Send Inquiry</button>
+           <button type="submit" id="formBtn">Send Inquiry</button>
         </form>
 
         <div class="map-box">
@@ -576,20 +490,18 @@
   <footer class="footer-section">
     <div class="footer-top">
       <div class="footer-brand">
-        <h3>Mother’s Touch</h3>
-        <p data-en="Lactation & Breastfeeding Support Clinic" data-gu="લેક્ટેશન અને સ્તનપાન સપોર્ટ ક્લિનિક">Lactation & Breastfeeding Support Clinic</p>
-        <p class="footer-small-text"
-           data-en="Personalized breastfeeding guidance for mothers with compassionate and evidence-based support."
-           data-gu="માતાઓ માટે સ્નેહભર્યું અને વિજ્ઞાન આધારિત વ્યક્તિગત સ્તનપાન માર્ગદર્શન.">
-           Personalized breastfeeding guidance for mothers with compassionate and evidence-based support.
+        <h3 id="footerBrand">Mother’s Touch</h3>
+        <p id="footerSub">Lactation & Breastfeeding Support Clinic</p>
+        <p class="footer-small-text" id="footerText">
+          Personalized breastfeeding guidance for mothers with compassionate and evidence-based support.
         </p>
       </div>
 
       <div class="footer-links">
-        <a href="#home" data-en="Home" data-gu="હોમ">Home</a>
-        <a href="#services" data-en="Services" data-gu="સેવાઓ">Services</a>
-        <a href="#about" data-en="About" data-gu="અમારા વિશે">About</a>
-        <a href="#contact" data-en="Contact" data-gu="સંપર્ક">Contact</a>
+        <a href="#home" id="footerHome">Home</a>
+        <a href="#services" id="footerServices">Services</a>
+        <a href="#about" id="footerAbout">About</a>
+        <a href="#contact" id="footerContact">Contact</a>
         <a href="https://instagram.com/mothers_touchig" target="_blank">Instagram</a>
       </div>
     </div>
@@ -599,10 +511,9 @@
     </div>
   </footer>
 
-  <!-- STICKY WHATSAPP -->
-  <a href="https://wa.me/919274284078" target="_blank" class="whatsapp-float">
-    WhatsApp
-  </a>
+  <!-- FLOATING BUTTONS -->
+  <a href="https://wa.me/919274284078" target="_blank" class="whatsapp-float">WhatsApp</a>
+  <a href="#contact" class="book-float" id="bookFloatBtn">Book Consultation</a>
 
   <script src="script.js"></script>
 </body>
