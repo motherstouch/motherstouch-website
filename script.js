@@ -40,9 +40,11 @@ const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach(item => {
   const btn = item.querySelector(".faq-question");
-  btn.addEventListener("click", () => {
-    item.classList.toggle("active");
-  });
+  if (btn) {
+    btn.addEventListener("click", () => {
+      item.classList.toggle("active");
+    });
+  }
 });
 
 // ===============================
@@ -86,10 +88,11 @@ if (counterSection) {
 }
 
 // ===============================
-// LANGUAGE SWITCH
+// LANGUAGE TOGGLE
 // ===============================
-const langEn = document.getElementById("langEn");
-const langGu = document.getElementById("langGu");
+const langToggle = document.getElementById("langToggle");
+
+let currentLanguage = localStorage.getItem("preferredLanguage") || "en";
 
 const translations = {
   en: {
@@ -393,7 +396,27 @@ const translations = {
   }
 };
 
+// ===============================
+// UPDATE LANGUAGE TOGGLE UI
+// ===============================
+function updateLanguageButtonUI() {
+  if (!langToggle) return;
+
+  if (currentLanguage === "gu") {
+    langToggle.classList.add("gu-active");
+    langToggle.setAttribute("aria-pressed", "true");
+  } else {
+    langToggle.classList.remove("gu-active");
+    langToggle.setAttribute("aria-pressed", "false");
+  }
+}
+
+// ===============================
+// SET LANGUAGE
+// ===============================
 function setLanguage(lang) {
+  currentLanguage = lang;
+
   Object.keys(translations[lang]).forEach(id => {
     const el = document.getElementById(id);
     if (el) {
@@ -401,23 +424,26 @@ function setLanguage(lang) {
     }
   });
 
-  if (lang === "gu") {
-    document.documentElement.lang = "gu";
-    langGu.classList.add("active");
-    langEn.classList.remove("active");
-  } else {
-    document.documentElement.lang = "en";
-    langEn.classList.add("active");
-    langGu.classList.remove("active");
-  }
+  document.documentElement.lang = lang === "gu" ? "gu" : "en";
 
+  updateLanguageButtonUI();
   localStorage.setItem("preferredLanguage", lang);
 }
 
-if (langEn && langGu) {
-  langEn.addEventListener("click", () => setLanguage("en"));
-  langGu.addEventListener("click", () => setLanguage("gu"));
+// ===============================
+// LANGUAGE TOGGLE CLICK
+// ===============================
+if (langToggle) {
+  langToggle.addEventListener("click", () => {
+    const nextLang = currentLanguage === "en" ? "gu" : "en";
+    setLanguage(nextLang);
+  });
 }
 
-const savedLang = localStorage.getItem("preferredLanguage") || "en";
-setLanguage(savedLang);
+// ===============================
+// DEFAULT LOAD LANGUAGE
+// ===============================
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("preferredLanguage") || "en";
+  setLanguage(savedLang);
+});
