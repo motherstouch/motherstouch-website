@@ -64,29 +64,75 @@ h1, h2, h3, h4 {
   gap: 14px;
 }
 
-.lang-switch {
+/* =========================
+   LANGUAGE SWITCH FINAL FIX
+========================= */
+
+.language-switch {
   display: flex;
-  background: #eaf4ff;
-  border-radius: 999px;
-  padding: 4px;
-  border: 1px solid #dbeafb;
+  align-items: center;
+  gap: 6px;
+  margin-left: 14px;
+  flex-shrink: 0;
 }
 
 .lang-btn {
-  border: none;
-  background: transparent;
+  border: 1px solid #d7e8f8;
+  background: #f4f9ff;
   color: #0f4c81;
-  padding: 8px 14px;
+  padding: 5px 10px;
   border-radius: 999px;
-  cursor: pointer;
+  font-size: 0.72rem;
   font-weight: 600;
-  font-size: 0.78rem;
-  transition: 0.3s ease;
+  cursor: pointer;
+  line-height: 1;
+  min-width: 58px;
+  height: 32px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(30, 136, 229, 0.06);
+}
+
+.lang-btn:hover {
+  background: #e3f2fd;
+  transform: translateY(-1px);
 }
 
 .lang-btn.active {
   background: #1e88e5;
   color: white;
+  border-color: #1e88e5;
+  box-shadow: 0 8px 18px rgba(30, 136, 229, 0.18);
+}
+
+/* MOBILE FIX */
+@media (max-width: 992px) {
+  .language-switch {
+    gap: 5px;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  .lang-btn {
+    padding: 4px 8px;
+    font-size: 0.68rem;
+    min-width: 52px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .language-switch {
+    gap: 4px;
+    margin-right: 8px;
+  }
+
+  .lang-btn {
+    padding: 4px 7px;
+    font-size: 0.64rem;
+    min-width: 48px;
+    height: 28px;
+    border-radius: 999px;
+  }
 }
 
 .menu-toggle {
