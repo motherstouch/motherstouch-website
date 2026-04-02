@@ -952,3 +952,84 @@ nav {
     bottom: 18px;
   }
 }
+/* =========================
+   PATIENT CONVERSION ADD-ONS
+========================= */
+
+.review-btn {
+  display: inline-block;
+  margin-top: 14px;
+  text-decoration: none;
+  background: #1e88e5;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.review-btn:hover {
+  background: #1565c0;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(30, 136, 229, 0.18);
+}
+
+.book-float {
+  position: fixed;
+  right: 20px;
+  bottom: 82px;
+  background: #0f4c81;
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  box-shadow: 0 16px 35px rgba(15, 76, 129, 0.28);
+  z-index: 999;
+  transition: 0.3s ease;
+}
+
+.book-float:hover {
+  background: #1565c0;
+  transform: translateY(-3px);
+}
+
+.trust-strip {
+  background: linear-gradient(to right, #edf6ff, #f8fbff);
+  padding: 18px 8%;
+  border-top: 1px solid #e3eef9;
+  border-bottom: 1px solid #e3eef9;
+}
+
+.trust-strip-inner {
+  text-align: center;
+}
+
+.trust-strip p {
+  color: #0f4c81;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.review-box {
+  border: 1px solid #cfe7fb;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+}
+
+@media (max-width: 768px) {
+  .book-float {
+    right: 16px;
+    bottom: 78px;
+    padding: 12px 18px;
+    font-size: 0.92rem;
+  }
+
+  .trust-strip {
+    padding: 16px 6%;
+  }
+
+  .trust-strip p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+}
